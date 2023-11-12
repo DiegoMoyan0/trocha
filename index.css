@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", Arial, sans-serif;
+    background: linear-gradient(to right, #E34169, #343E3D);
+
+}
+
+header {
+    background-color: #343E3D;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+nav {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 2px 4px 0 rgba(73, 73, 73, 0.5);
+}
+
+.logo-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-img:hover {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#content-card {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.card {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 20px;
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    margin: 10px;
+    text-align: center;
+}
+
+.card img {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.title-card{
+color: white;
+font-size: 2rem;
+}
+
+.p-card{
+    color: white;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 767px) {
+    .logo-img:hover {
+        animation: none;
+    }
+    #content-card {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 991px) {
+    .logo-img {
+        animation: none;
+    }
+}
