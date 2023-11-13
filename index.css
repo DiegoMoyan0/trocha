@@ -5,9 +5,9 @@
 }
 
 body {
-    font-family: "Lato", Arial, sans-serif;
+    font-family: "Lato", Arial, sans-serif !important;
     background: linear-gradient(to right, #E34169, #343E3D);
-
+    margin: 0 100px !important;
 }
 
 header {
@@ -83,12 +83,13 @@ nav {
     transform: scale(1.1);
 }
 
-.title-card{
-color: white;
-font-size: 2rem;
+.title-card {
+    font-family: "Lato", Arial, sans-serif !important;
+    color: white;
+    font-size: 2rem;
 }
 
-.p-card{
+.p-card {
     color: white;
     font-size: 1.5rem;
 }
@@ -97,6 +98,7 @@ font-size: 2rem;
     .logo-img:hover {
         animation: none;
     }
+
     #content-card {
         flex-direction: column;
     }
