@@ -102,10 +102,13 @@ nav {
         flex-direction: column;
     }
     .title-card {
-        font-size: 0.5rem;
+        font-size: 1.1rem;
     }
     .p-card {
-        font-size: 0.3rem;
+        font-size: 0.8rem;
+    }
+    header{
+        margin-bottom: 2rem;
     }
     
 }
